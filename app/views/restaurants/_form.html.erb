@@ -13,3 +13,18 @@
     <%= f.button :submit %>
   </div>
 <% end %>
+
+
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label 'name' %>
+  <%= f.text_field :name %>
+
+  <%= f.label 'address' %>
+  <%= f.text_field :address %>
+
+  <%= f.label 'rating' %>
+  <%= f.text_field :rating %>
+
+  <%= f.submit 'crear' %>
+
+<% end %>
